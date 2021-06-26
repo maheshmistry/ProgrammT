@@ -1,0 +1,870 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://visualdataweb.org/MCompanyTest/"
+     xml:base="http://visualdataweb.org/MCompanyTest/"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:vs="http://www.w3.org/2003/06/sw-vocab-status/ns#"
+     xmlns:dbo="http://dbpedia.org/ontology/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:wot="http://xmlns.com/wot/0.1/"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:foaf="http://xmlns.com/foaf/0.1/"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:newOntology="http://visualdataweb.org/newOntology/"
+     xmlns:syntheticontology="http://visualdataweb.org/syntheticontology/">
+    <owl:Ontology rdf:about="http://visualdataweb.org/syntheticontology/">
+        <dc:description xml:lang="en">Synthetic ontology description</dc:description>
+        <dc:title xml:lang="en">Synthetic Ontology</dc:title>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/description -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/description"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/title -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/title"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://visualdataweb.org/MCompanyTest/measureValue -->
+
+    <owl:ObjectProperty rdf:about="http://visualdataweb.org/MCompanyTest/measureValue">
+        <rdfs:domain rdf:resource="http://visualdataweb.org/newOntology/Fact"/>
+        <rdfs:range rdf:resource="http://visualdataweb.org/MCompanyTest/MeasureValue"/>
+        <rdfs:label xml:lang="en">hasMeasure</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://visualdataweb.org/newOntology/hasSize -->
+
+    <owl:ObjectProperty rdf:about="http://visualdataweb.org/newOntology/hasSize">
+        <rdfs:domain rdf:resource="http://visualdataweb.org/newOntology/Company"/>
+        <rdfs:range rdf:resource="http://visualdataweb.org/newOntology/SizeLevel"/>
+        <rdfs:label xml:lang="en">hasSize</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://visualdataweb.org/newOntology/hasdependentvariable -->
+
+    <owl:ObjectProperty rdf:about="http://visualdataweb.org/newOntology/hasdependentvariable">
+        <rdfs:domain rdf:resource="http://visualdataweb.org/newOntology/Fact"/>
+        <rdfs:label xml:lang="en">hasVariable</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://visualdataweb.org/newOntology/isAbout -->
+
+    <owl:ObjectProperty rdf:about="http://visualdataweb.org/newOntology/isAbout">
+        <rdfs:domain rdf:resource="http://visualdataweb.org/newOntology/Fact"/>
+        <rdfs:range rdf:resource="http://visualdataweb.org/newOntology/Company"/>
+        <rdfs:range rdf:resource="http://visualdataweb.org/newOntology/SizeLevel"/>
+        <rdfs:label xml:lang="en">isAbout</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://visualdataweb.org/syntheticontology/hasAge -->
+
+    <owl:ObjectProperty rdf:about="http://visualdataweb.org/syntheticontology/hasAge">
+        <rdfs:subPropertyOf rdf:resource="http://visualdataweb.org/newOntology/hasdependentvariable"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://visualdataweb.org/syntheticontology/hasCompany -->
+
+    <owl:ObjectProperty rdf:about="http://visualdataweb.org/syntheticontology/hasCompany">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://visualdataweb.org/syntheticontology/hasDependent -->
+
+    <owl:ObjectProperty rdf:about="http://visualdataweb.org/syntheticontology/hasDependent">
+        <rdfs:subPropertyOf rdf:resource="http://visualdataweb.org/syntheticontology/hasVariableScope"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://visualdataweb.org/syntheticontology/hasEducation -->
+
+    <owl:ObjectProperty rdf:about="http://visualdataweb.org/syntheticontology/hasEducation">
+        <rdfs:subPropertyOf rdf:resource="http://visualdataweb.org/newOntology/hasdependentvariable"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://visualdataweb.org/syntheticontology/hasEthnicity -->
+
+    <owl:ObjectProperty rdf:about="http://visualdataweb.org/syntheticontology/hasEthnicity">
+        <rdfs:subPropertyOf rdf:resource="http://visualdataweb.org/newOntology/hasdependentvariable"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://visualdataweb.org/syntheticontology/hasGender -->
+
+    <owl:ObjectProperty rdf:about="http://visualdataweb.org/syntheticontology/hasGender">
+        <rdfs:subPropertyOf rdf:resource="http://visualdataweb.org/newOntology/hasdependentvariable"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://visualdataweb.org/syntheticontology/hasIndependent -->
+
+    <owl:ObjectProperty rdf:about="http://visualdataweb.org/syntheticontology/hasIndependent">
+        <rdfs:subPropertyOf rdf:resource="http://visualdataweb.org/syntheticontology/hasVariableScope"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://visualdataweb.org/syntheticontology/hasSalary -->
+
+    <owl:ObjectProperty rdf:about="http://visualdataweb.org/syntheticontology/hasSalary">
+        <rdfs:subPropertyOf rdf:resource="http://visualdataweb.org/newOntology/hasdependentvariable"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://visualdataweb.org/syntheticontology/hasTeam -->
+
+    <owl:ObjectProperty rdf:about="http://visualdataweb.org/syntheticontology/hasTeam">
+        <rdfs:subPropertyOf rdf:resource="http://visualdataweb.org/newOntology/hasdependentvariable"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://visualdataweb.org/syntheticontology/hasVariableScope -->
+
+    <owl:ObjectProperty rdf:about="http://visualdataweb.org/syntheticontology/hasVariableScope">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://visualdataweb.org/newOntology/Fact"/>
+        <rdfs:range rdf:resource="http://visualdataweb.org/syntheticontology/variable"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://visualdataweb.org/syntheticontology/isAge -->
+
+    <owl:ObjectProperty rdf:about="http://visualdataweb.org/syntheticontology/isAge">
+        <rdfs:subPropertyOf rdf:resource="http://visualdataweb.org/syntheticontology/isVariable"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://visualdataweb.org/syntheticontology/isEducation -->
+
+    <owl:ObjectProperty rdf:about="http://visualdataweb.org/syntheticontology/isEducation">
+        <rdfs:subPropertyOf rdf:resource="http://visualdataweb.org/syntheticontology/isVariable"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://visualdataweb.org/syntheticontology/isEthnicity -->
+
+    <owl:ObjectProperty rdf:about="http://visualdataweb.org/syntheticontology/isEthnicity">
+        <rdfs:subPropertyOf rdf:resource="http://visualdataweb.org/syntheticontology/isVariable"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://visualdataweb.org/syntheticontology/isGender -->
+
+    <owl:ObjectProperty rdf:about="http://visualdataweb.org/syntheticontology/isGender">
+        <rdfs:subPropertyOf rdf:resource="http://visualdataweb.org/syntheticontology/isVariable"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://visualdataweb.org/syntheticontology/isSalary -->
+
+    <owl:ObjectProperty rdf:about="http://visualdataweb.org/syntheticontology/isSalary">
+        <rdfs:subPropertyOf rdf:resource="http://visualdataweb.org/syntheticontology/isVariable"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://visualdataweb.org/syntheticontology/isTeam -->
+
+    <owl:ObjectProperty rdf:about="http://visualdataweb.org/syntheticontology/isTeam">
+        <rdfs:subPropertyOf rdf:resource="http://visualdataweb.org/syntheticontology/isVariable"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://visualdataweb.org/syntheticontology/isVariable -->
+
+    <owl:ObjectProperty rdf:about="http://visualdataweb.org/syntheticontology/isVariable">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://visualdataweb.org/newOntology/Fact"/>
+        <rdfs:range rdf:resource="http://visualdataweb.org/syntheticontology/variableScope"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.w3.org/2002/07/owl#topObjectProperty -->
+
+    <rdf:Description rdf:about="http://www.w3.org/2002/07/owl#topObjectProperty">
+        <rdfs:domain rdf:resource="http://visualdataweb.org/newOntology/Fact"/>
+        <rdfs:range rdf:resource="http://visualdataweb.org/newOntology/Company"/>
+    </rdf:Description>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://visualdataweb.org/MCompanyTest/hasPercent -->
+
+    <owl:DatatypeProperty rdf:about="http://visualdataweb.org/MCompanyTest/hasPercent">
+        <rdfs:domain rdf:resource="http://visualdataweb.org/newOntology/Fact"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://visualdataweb.org/MCompanyTest/hasVariableName -->
+
+    <owl:DatatypeProperty rdf:about="http://visualdataweb.org/MCompanyTest/hasVariableName">
+        <rdfs:domain rdf:resource="http://visualdataweb.org/newOntology/Fact"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label xml:lang="en">hasVariable</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://visualdataweb.org/newOntology/hasPublishedDate -->
+
+    <owl:DatatypeProperty rdf:about="http://visualdataweb.org/newOntology/hasPublishedDate">
+        <rdfs:domain rdf:resource="http://visualdataweb.org/newOntology/Fact"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://visualdataweb.org/newOntology/hasURI -->
+
+    <owl:DatatypeProperty rdf:about="http://visualdataweb.org/newOntology/hasURI">
+        <rdfs:domain rdf:resource="http://visualdataweb.org/newOntology/Fact"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://visualdataweb.org/syntheticontology/hasAge -->
+
+    <owl:DatatypeProperty rdf:about="http://visualdataweb.org/syntheticontology/hasAge">
+        <rdfs:subPropertyOf rdf:resource="http://visualdataweb.org/MCompanyTest/hasVariableName"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://visualdataweb.org/syntheticontology/hasEducation -->
+
+    <owl:DatatypeProperty rdf:about="http://visualdataweb.org/syntheticontology/hasEducation">
+        <rdfs:subPropertyOf rdf:resource="http://visualdataweb.org/MCompanyTest/hasVariableName"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://visualdataweb.org/syntheticontology/hasEthnicity -->
+
+    <owl:DatatypeProperty rdf:about="http://visualdataweb.org/syntheticontology/hasEthnicity">
+        <rdfs:subPropertyOf rdf:resource="http://visualdataweb.org/MCompanyTest/hasVariableName"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://visualdataweb.org/syntheticontology/hasGender -->
+
+    <owl:DatatypeProperty rdf:about="http://visualdataweb.org/syntheticontology/hasGender">
+        <rdfs:subPropertyOf rdf:resource="http://visualdataweb.org/MCompanyTest/hasVariableName"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://visualdataweb.org/syntheticontology/hasSalary -->
+
+    <owl:DatatypeProperty rdf:about="http://visualdataweb.org/syntheticontology/hasSalary">
+        <rdfs:subPropertyOf rdf:resource="http://visualdataweb.org/MCompanyTest/hasVariableName"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://visualdataweb.org/syntheticontology/hasTeam -->
+
+    <owl:DatatypeProperty rdf:about="http://visualdataweb.org/syntheticontology/hasTeam">
+        <rdfs:subPropertyOf rdf:resource="http://visualdataweb.org/MCompanyTest/hasVariableName"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://visualdataweb.org/syntheticontology/hasValue -->
+
+    <owl:DatatypeProperty rdf:about="http://visualdataweb.org/syntheticontology/hasValue">
+        <rdfs:domain rdf:resource="http://visualdataweb.org/newOntology/Fact"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://visualdataweb.org/MCompanyTest/MeasureValue -->
+
+    <owl:Class rdf:about="http://visualdataweb.org/MCompanyTest/MeasureValue">
+        <rdfs:label xml:lang="en">Measure</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://visualdataweb.org/newOntology/Company -->
+
+    <owl:Class rdf:about="http://visualdataweb.org/newOntology/Company">
+        <rdfs:label xml:lang="en">Company</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://visualdataweb.org/newOntology/Fact -->
+
+    <owl:Class rdf:about="http://visualdataweb.org/newOntology/Fact">
+        <rdfs:label xml:lang="en">Fact</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://visualdataweb.org/newOntology/SizeLevel -->
+
+    <owl:Class rdf:about="http://visualdataweb.org/newOntology/SizeLevel">
+        <rdfs:label xml:lang="en">SizeLevel</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://visualdataweb.org/syntheticontology/variable -->
+
+    <owl:Class rdf:about="http://visualdataweb.org/syntheticontology/variable">
+        <rdfs:label>variable</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://visualdataweb.org/syntheticontology/variableScope -->
+
+    <owl:Class rdf:about="http://visualdataweb.org/syntheticontology/variableScope">
+        <rdfs:label>variableScope</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://visualdataweb.org/syntheticontology/Age -->
+
+    <owl:NamedIndividual rdf:about="http://visualdataweb.org/syntheticontology/Age">
+        <rdf:type rdf:resource="http://visualdataweb.org/syntheticontology/variable"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://visualdataweb.org/syntheticontology/DataRange -->
+
+    <owl:NamedIndividual rdf:about="http://visualdataweb.org/syntheticontology/DataRange">
+        <rdf:type rdf:resource="http://visualdataweb.org/MCompanyTest/MeasureValue"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://visualdataweb.org/syntheticontology/Dependent -->
+
+    <owl:NamedIndividual rdf:about="http://visualdataweb.org/syntheticontology/Dependent">
+        <rdf:type rdf:resource="http://visualdataweb.org/syntheticontology/variableScope"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://visualdataweb.org/syntheticontology/Education -->
+
+    <owl:NamedIndividual rdf:about="http://visualdataweb.org/syntheticontology/Education">
+        <rdf:type rdf:resource="http://visualdataweb.org/syntheticontology/variable"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://visualdataweb.org/syntheticontology/Ethnicity -->
+
+    <owl:NamedIndividual rdf:about="http://visualdataweb.org/syntheticontology/Ethnicity">
+        <rdf:type rdf:resource="http://visualdataweb.org/syntheticontology/variable"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://visualdataweb.org/syntheticontology/Experience -->
+
+    <owl:NamedIndividual rdf:about="http://visualdataweb.org/syntheticontology/Experience">
+        <rdf:type rdf:resource="http://visualdataweb.org/syntheticontology/variable"/>
+        <newOntology:hasSize rdf:resource="http://visualdataweb.org/syntheticontology/Medium"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://visualdataweb.org/syntheticontology/Fact1 -->
+
+    <owl:NamedIndividual rdf:about="http://visualdataweb.org/syntheticontology/Fact1">
+        <rdf:type rdf:resource="http://visualdataweb.org/newOntology/Fact"/>
+        <measureValue rdf:resource="http://visualdataweb.org/syntheticontology/Median"/>
+        <newOntology:hasSize rdf:resource="http://visualdataweb.org/syntheticontology/Startup"/>
+        <syntheticontology:hasDependent rdf:resource="http://visualdataweb.org/syntheticontology/Salary"/>
+        <syntheticontology:hasIndependent rdf:resource="http://visualdataweb.org/syntheticontology/Gender"/>
+        <newOntology:hasPublishedDate>31-01-2019</newOntology:hasPublishedDate>
+        <newOntology:hasURI>https://berlinstartupjobs.com/startup-salary-survey/</newOntology:hasURI>
+        <syntheticontology:hasValue>[[Gender:Male, Salary: 3980], [Gender:Female, Salary:2980]]</syntheticontology:hasValue>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://visualdataweb.org/syntheticontology/Fact10 -->
+
+    <owl:NamedIndividual rdf:about="http://visualdataweb.org/syntheticontology/Fact10">
+        <rdf:type rdf:resource="http://visualdataweb.org/newOntology/Fact"/>
+        <measureValue rdf:resource="http://visualdataweb.org/syntheticontology/Mean"/>
+        <newOntology:hasSize rdf:resource="http://visualdataweb.org/syntheticontology/Large"/>
+        <syntheticontology:hasDependent rdf:resource="http://visualdataweb.org/syntheticontology/Salary"/>
+        <syntheticontology:hasIndependent rdf:resource="http://visualdataweb.org/syntheticontology/Experience"/>
+        <newOntology:hasPublishedDate>01-01-2019</newOntology:hasPublishedDate>
+        <newOntology:hasURI>https://www.robertwaltersgroup.com/content/dam/robert-walters/global/files/salary-survey/salary-survey-2019-europe.pdf</newOntology:hasURI>
+        <syntheticontology:hasValue>[[Experience:&apos;3-5&apos;, Salary: 107460],
+[Experience:&apos;10+&apos;, Salary: 143270]]</syntheticontology:hasValue>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://visualdataweb.org/syntheticontology/Fact11 -->
+
+    <owl:NamedIndividual rdf:about="http://visualdataweb.org/syntheticontology/Fact11">
+        <rdf:type rdf:resource="http://visualdataweb.org/newOntology/Fact"/>
+        <measureValue rdf:resource="http://visualdataweb.org/syntheticontology/Median"/>
+        <newOntology:hasSize rdf:resource="http://visualdataweb.org/syntheticontology/Large"/>
+        <syntheticontology:hasIndependent rdf:resource="http://visualdataweb.org/syntheticontology/Salary"/>
+        <newOntology:hasPublishedDate>30-04-2018</newOntology:hasPublishedDate>
+        <newOntology:hasURI>https://www.vox.com/2018/4/30/17301264/how-much-twitter-google-amazon-highest-paying-salary-tech</newOntology:hasURI>
+        <syntheticontology:hasValue>[Salary:63058]</syntheticontology:hasValue>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://visualdataweb.org/syntheticontology/Fact12 -->
+
+    <owl:NamedIndividual rdf:about="http://visualdataweb.org/syntheticontology/Fact12">
+        <rdf:type rdf:resource="http://visualdataweb.org/newOntology/Fact"/>
+        <measureValue rdf:resource="http://visualdataweb.org/syntheticontology/Mean"/>
+        <newOntology:hasSize rdf:resource="http://visualdataweb.org/syntheticontology/Medium"/>
+        <syntheticontology:hasDependent rdf:resource="http://visualdataweb.org/syntheticontology/Salary"/>
+        <syntheticontology:hasIndependent rdf:resource="http://visualdataweb.org/syntheticontology/Experience"/>
+        <newOntology:hasPublishedDate>17-02-2021</newOntology:hasPublishedDate>
+        <newOntology:hasURI>https://www.daxx.com/blog/development-trends/it-salaries-software-developer-trends</newOntology:hasURI>
+        <syntheticontology:hasValue>[[Experience:&apos;0-2&apos;, Salary: 57550],
+[Experience:&apos;3-5&apos;, Salary: 70500],
+[Experience:&apos;6-10&apos;, Salary: 85110]]</syntheticontology:hasValue>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://visualdataweb.org/syntheticontology/Fact13 -->
+
+    <owl:NamedIndividual rdf:about="http://visualdataweb.org/syntheticontology/Fact13">
+        <rdf:type rdf:resource="http://visualdataweb.org/newOntology/Fact"/>
+        <measureValue rdf:resource="http://visualdataweb.org/syntheticontology/Mean"/>
+        <newOntology:hasSize rdf:resource="http://visualdataweb.org/syntheticontology/Medium"/>
+        <syntheticontology:hasDependent rdf:resource="http://visualdataweb.org/syntheticontology/Salary"/>
+        <syntheticontology:hasIndependent rdf:resource="http://visualdataweb.org/syntheticontology/Experience"/>
+        <hasVariableName>[[Experience:&apos;0-2&apos;, Salary: 42420],
+[Experience:&apos;3-5&apos;, Salary: 55850],
+[Experience:&apos;6-10&apos;, Salary: 67040]]</hasVariableName>
+        <newOntology:hasPublishedDate>17-02-2021</newOntology:hasPublishedDate>
+        <newOntology:hasURI>https://www.daxx.com/blog/development-trends/it-salaries-software-developer-trends</newOntology:hasURI>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://visualdataweb.org/syntheticontology/Fact14 -->
+
+    <owl:NamedIndividual rdf:about="http://visualdataweb.org/syntheticontology/Fact14">
+        <rdf:type rdf:resource="http://visualdataweb.org/newOntology/Fact"/>
+        <measureValue rdf:resource="http://visualdataweb.org/syntheticontology/Mean"/>
+        <newOntology:hasSize rdf:resource="http://visualdataweb.org/syntheticontology/Medium"/>
+        <syntheticontology:hasDependent rdf:resource="http://visualdataweb.org/syntheticontology/Salary"/>
+        <syntheticontology:hasIndependent rdf:resource="http://visualdataweb.org/syntheticontology/Experience"/>
+        <newOntology:hasPublishedDate>17-02-2021</newOntology:hasPublishedDate>
+        <newOntology:hasURI>https://www.daxx.com/blog/development-trends/it-salaries-software-developer-trends</newOntology:hasURI>
+        <syntheticontology:hasValue>[[Experience:&apos;0-2&apos;, Salary: 39560],
+[Experience:&apos;3-5&apos;, Salary: 58030],
+[Experience:&apos;6-10&apos;, Salary: 67090]]</syntheticontology:hasValue>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://visualdataweb.org/syntheticontology/Fact15 -->
+
+    <owl:NamedIndividual rdf:about="http://visualdataweb.org/syntheticontology/Fact15">
+        <rdf:type rdf:resource="http://visualdataweb.org/newOntology/Fact"/>
+        <measureValue rdf:resource="http://visualdataweb.org/syntheticontology/Mean"/>
+        <newOntology:hasSize rdf:resource="http://visualdataweb.org/syntheticontology/Medium"/>
+        <syntheticontology:hasDependent rdf:resource="http://visualdataweb.org/syntheticontology/Salary"/>
+        <syntheticontology:hasIndependent rdf:resource="http://visualdataweb.org/syntheticontology/Experience"/>
+        <newOntology:hasPublishedDate>17-02-2021</newOntology:hasPublishedDate>
+        <newOntology:hasURI>https://www.daxx.com/blog/development-trends/it-salaries-software-developer-trends</newOntology:hasURI>
+        <syntheticontology:hasValue>[[Experience:&apos;0-2&apos;, Salary: 58130],
+[Experience:&apos;3-5&apos;, Salary: 88220],
+[Experience:&apos;6-10&apos;, Salary: 123170]]</syntheticontology:hasValue>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://visualdataweb.org/syntheticontology/Fact16 -->
+
+    <owl:NamedIndividual rdf:about="http://visualdataweb.org/syntheticontology/Fact16">
+        <rdf:type rdf:resource="http://visualdataweb.org/newOntology/Fact"/>
+        <measureValue rdf:resource="http://visualdataweb.org/syntheticontology/Median"/>
+        <newOntology:hasSize rdf:resource="http://visualdataweb.org/syntheticontology/Medium"/>
+        <syntheticontology:hasIndependent rdf:resource="http://visualdataweb.org/syntheticontology/Salary"/>
+        <newOntology:hasPublishedDate>11-12-2018</newOntology:hasPublishedDate>
+        <newOntology:hasURI>https://www.payscale.com/data/economic-trends-2018-2019</newOntology:hasURI>
+        <syntheticontology:hasValue>[Salary:77900]</syntheticontology:hasValue>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://visualdataweb.org/syntheticontology/Fact17 -->
+
+    <owl:NamedIndividual rdf:about="http://visualdataweb.org/syntheticontology/Fact17">
+        <rdf:type rdf:resource="http://visualdataweb.org/newOntology/Fact"/>
+        <measureValue rdf:resource="http://visualdataweb.org/syntheticontology/Median"/>
+        <newOntology:hasSize rdf:resource="http://visualdataweb.org/syntheticontology/Medium"/>
+        <syntheticontology:hasIndependent rdf:resource="http://visualdataweb.org/syntheticontology/Salary"/>
+        <newOntology:hasPublishedDate>31-01-2019</newOntology:hasPublishedDate>
+        <newOntology:hasURI>https://www.payscale.com/data/which-skills-are-most-valuable</newOntology:hasURI>
+        <syntheticontology:hasValue>[Salary:59700]</syntheticontology:hasValue>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://visualdataweb.org/syntheticontology/Fact18 -->
+
+    <owl:NamedIndividual rdf:about="http://visualdataweb.org/syntheticontology/Fact18">
+        <rdf:type rdf:resource="http://visualdataweb.org/newOntology/Fact"/>
+        <newOntology:hasPublishedDate>06-07-2020</newOntology:hasPublishedDate>
+        <newOntology:hasURI>https://www.statista.com/topics/2540/workforce-diversity-at-online-companies/</newOntology:hasURI>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://visualdataweb.org/syntheticontology/Fact2 -->
+
+    <owl:NamedIndividual rdf:about="http://visualdataweb.org/syntheticontology/Fact2">
+        <rdf:type rdf:resource="http://visualdataweb.org/newOntology/Fact"/>
+        <measureValue rdf:resource="http://visualdataweb.org/syntheticontology/Percent"/>
+        <newOntology:hasSize rdf:resource="http://visualdataweb.org/syntheticontology/Startup"/>
+        <syntheticontology:hasIndependent rdf:resource="http://visualdataweb.org/syntheticontology/Education"/>
+        <newOntology:hasPublishedDate>31-01-2019</newOntology:hasPublishedDate>
+        <newOntology:hasURI>https://berlinstartupjobs.com/startup-salary-survey/</newOntology:hasURI>
+        <syntheticontology:hasValue>[[Education:Graduate, Percent:81.8],[Education:Dropout, Percent:6.0],[Education:EnrolledInUni, Percent:5.0],[Education:Other, Percent:4.8],[Education:PhD, Percent:2.3]]</syntheticontology:hasValue>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://visualdataweb.org/syntheticontology/Fact3 -->
+
+    <owl:NamedIndividual rdf:about="http://visualdataweb.org/syntheticontology/Fact3">
+        <rdf:type rdf:resource="http://visualdataweb.org/newOntology/Fact"/>
+        <measureValue rdf:resource="http://visualdataweb.org/syntheticontology/Median"/>
+        <syntheticontology:hasDependent rdf:resource="http://visualdataweb.org/syntheticontology/Salary"/>
+        <syntheticontology:hasIndependent rdf:resource="http://visualdataweb.org/syntheticontology/Experience"/>
+        <newOntology:hasPublishedDate>31-01-2019</newOntology:hasPublishedDate>
+        <newOntology:hasURI>https://berlinstartupjobs.com/startup-salary-survey/</newOntology:hasURI>
+        <syntheticontology:hasValue>[[Experience:&apos;0-2&apos;, Gender:&apos;Male&apos;, Salary: 2390],
+[Experience:&apos;3-5&apos;, Gender:&apos;Male&apos;, Salary: 3820],
+[Experience:&apos;6-10&apos;, Gender:&apos;Male&apos;, Salary: 4770].
+[Experience:&apos;10+&apos;, Gender:&apos;Male&apos;, Salary: 5470],
+[Experience:&apos;0-2&apos;, Gender:&apos;Female&apos;, Salary: 2150],
+[Experience:&apos;3-5&apos;, Gender:&apos;Female&apos;, Salary: 2980],
+[Experience:&apos;6-10&apos;, Gender:&apos;Female&apos;, Salary: 3580],
+[Experience:&apos;10+&apos;, Gender:&apos;Female&apos;, Salary: 3980]]</syntheticontology:hasValue>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://visualdataweb.org/syntheticontology/Fact4 -->
+
+    <owl:NamedIndividual rdf:about="http://visualdataweb.org/syntheticontology/Fact4">
+        <rdf:type rdf:resource="http://visualdataweb.org/newOntology/Fact"/>
+        <measureValue rdf:resource="http://visualdataweb.org/syntheticontology/Mean"/>
+        <newOntology:hasSize rdf:resource="http://visualdataweb.org/syntheticontology/Startup"/>
+        <syntheticontology:hasIndependent rdf:resource="http://visualdataweb.org/syntheticontology/Salary"/>
+        <newOntology:hasPublishedDate>26-01-2017</newOntology:hasPublishedDate>
+        <newOntology:hasURI>https://www.valuechampion.sg/average-income-startup-employees</newOntology:hasURI>
+        <syntheticontology:hasValue>[Salary:95500]</syntheticontology:hasValue>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://visualdataweb.org/syntheticontology/Fact5 -->
+
+    <owl:NamedIndividual rdf:about="http://visualdataweb.org/syntheticontology/Fact5">
+        <rdf:type rdf:resource="http://visualdataweb.org/newOntology/Fact"/>
+        <measureValue rdf:resource="http://visualdataweb.org/syntheticontology/Mean"/>
+        <newOntology:hasSize rdf:resource="http://visualdataweb.org/syntheticontology/Startup"/>
+        <syntheticontology:hasDependent rdf:resource="http://visualdataweb.org/syntheticontology/Salary"/>
+        <syntheticontology:hasIndependent rdf:resource="http://visualdataweb.org/syntheticontology/Experience"/>
+        <newOntology:hasPublishedDate>21-10-2016</newOntology:hasPublishedDate>
+        <newOntology:hasURI>https://www.thelocal.de/20161021/this-is-how-much-startup-geeks-earn-in-germany/</newOntology:hasURI>
+        <syntheticontology:hasValue>[[Experience:&apos;0-2&apos;,Salary:37040],
+[Experience:&apos;10+&apos;,Salary:55560]]</syntheticontology:hasValue>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://visualdataweb.org/syntheticontology/Fact6 -->
+
+    <owl:NamedIndividual rdf:about="http://visualdataweb.org/syntheticontology/Fact6">
+        <rdf:type rdf:resource="http://visualdataweb.org/newOntology/Fact"/>
+        <measureValue rdf:resource="http://visualdataweb.org/syntheticontology/Mean"/>
+        <newOntology:hasSize rdf:resource="http://visualdataweb.org/syntheticontology/Medium"/>
+        <syntheticontology:hasDependent rdf:resource="http://visualdataweb.org/syntheticontology/Salary"/>
+        <syntheticontology:hasIndependent rdf:resource="http://visualdataweb.org/syntheticontology/Gender"/>
+        <newOntology:hasPublishedDate>01-06-2021</newOntology:hasPublishedDate>
+        <newOntology:hasURI>https://www.averagesalarysurvey.com/it-telecommunication-ii/germany</newOntology:hasURI>
+        <syntheticontology:hasValue>[[Gender:&apos;Male&apos;, Salary:75390],
+[Gender:&apos;Female&apos;, Salary:63930]]</syntheticontology:hasValue>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://visualdataweb.org/syntheticontology/Fact7 -->
+
+    <owl:NamedIndividual rdf:about="http://visualdataweb.org/syntheticontology/Fact7">
+        <rdf:type rdf:resource="http://visualdataweb.org/newOntology/Fact"/>
+        <measureValue rdf:resource="http://visualdataweb.org/syntheticontology/Mean"/>
+        <newOntology:hasSize rdf:resource="http://visualdataweb.org/syntheticontology/Medium"/>
+        <syntheticontology:hasDependent rdf:resource="http://visualdataweb.org/syntheticontology/Salary"/>
+        <syntheticontology:hasIndependent rdf:resource="http://visualdataweb.org/syntheticontology/Experience"/>
+        <newOntology:hasPublishedDate>01-06-2021</newOntology:hasPublishedDate>
+        <newOntology:hasURI>https://www.averagesalarysurvey.com/it-telecommunication-ii/germany</newOntology:hasURI>
+        <syntheticontology:hasValue>[[Experience:&apos;0-2&apos;, Salary: 53070],
+[Experience:&apos;6-10&apos;, Salary:71640],
+[Experience:&apos;10+&apos;, Salary:89560],
+[Experience:&apos;20+&apos;, Salary:103610]]</syntheticontology:hasValue>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://visualdataweb.org/syntheticontology/Fact8 -->
+
+    <owl:NamedIndividual rdf:about="http://visualdataweb.org/syntheticontology/Fact8">
+        <rdf:type rdf:resource="http://visualdataweb.org/newOntology/Fact"/>
+        <measureValue rdf:resource="http://visualdataweb.org/syntheticontology/Mean"/>
+        <newOntology:hasSize rdf:resource="http://visualdataweb.org/syntheticontology/Medium"/>
+        <syntheticontology:hasDependent rdf:resource="http://visualdataweb.org/syntheticontology/Salary"/>
+        <syntheticontology:hasIndependent rdf:resource="http://visualdataweb.org/syntheticontology/Education"/>
+        <newOntology:hasPublishedDate>01-06-2021</newOntology:hasPublishedDate>
+        <newOntology:hasURI>https://www.averagesalarysurvey.com/it-telecommunication-ii/germany</newOntology:hasURI>
+        <syntheticontology:hasValue>[[Education:PhD, Salary:72430],[Education:Graduate, Salary:75260],[Education:Other, Salary:65930]]</syntheticontology:hasValue>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://visualdataweb.org/syntheticontology/Fact9 -->
+
+    <owl:NamedIndividual rdf:about="http://visualdataweb.org/syntheticontology/Fact9">
+        <rdf:type rdf:resource="http://visualdataweb.org/newOntology/Fact"/>
+        <measureValue rdf:resource="http://visualdataweb.org/syntheticontology/Median"/>
+        <newOntology:hasSize rdf:resource="http://visualdataweb.org/syntheticontology/Medium"/>
+        <syntheticontology:hasIndependent rdf:resource="http://visualdataweb.org/syntheticontology/Salary"/>
+        <newOntology:hasPublishedDate>08-01-2020</newOntology:hasPublishedDate>
+        <newOntology:hasURI>https://www.asdcode.de/2020/01/it-salary-survey-december-2019.html</newOntology:hasURI>
+        <syntheticontology:hasValue>[Salary:70000]</syntheticontology:hasValue>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://visualdataweb.org/syntheticontology/Gender -->
+
+    <owl:NamedIndividual rdf:about="http://visualdataweb.org/syntheticontology/Gender">
+        <rdf:type rdf:resource="http://visualdataweb.org/syntheticontology/variable"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://visualdataweb.org/syntheticontology/Google -->
+
+    <owl:NamedIndividual rdf:about="http://visualdataweb.org/syntheticontology/Google">
+        <rdf:type rdf:resource="http://visualdataweb.org/newOntology/Company"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://visualdataweb.org/syntheticontology/Independent -->
+
+    <owl:NamedIndividual rdf:about="http://visualdataweb.org/syntheticontology/Independent">
+        <rdf:type rdf:resource="http://visualdataweb.org/syntheticontology/variableScope"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://visualdataweb.org/syntheticontology/Large -->
+
+    <owl:NamedIndividual rdf:about="http://visualdataweb.org/syntheticontology/Large">
+        <rdf:type rdf:resource="http://visualdataweb.org/newOntology/SizeLevel"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://visualdataweb.org/syntheticontology/Mean -->
+
+    <owl:NamedIndividual rdf:about="http://visualdataweb.org/syntheticontology/Mean">
+        <rdf:type rdf:resource="http://visualdataweb.org/MCompanyTest/MeasureValue"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://visualdataweb.org/syntheticontology/Median -->
+
+    <owl:NamedIndividual rdf:about="http://visualdataweb.org/syntheticontology/Median">
+        <rdf:type rdf:resource="http://visualdataweb.org/MCompanyTest/MeasureValue"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://visualdataweb.org/syntheticontology/Medium -->
+
+    <owl:NamedIndividual rdf:about="http://visualdataweb.org/syntheticontology/Medium">
+        <rdf:type rdf:resource="http://visualdataweb.org/newOntology/SizeLevel"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://visualdataweb.org/syntheticontology/Mode -->
+
+    <owl:NamedIndividual rdf:about="http://visualdataweb.org/syntheticontology/Mode">
+        <rdf:type rdf:resource="http://visualdataweb.org/MCompanyTest/MeasureValue"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://visualdataweb.org/syntheticontology/Percent -->
+
+    <owl:NamedIndividual rdf:about="http://visualdataweb.org/syntheticontology/Percent">
+        <rdf:type rdf:resource="http://visualdataweb.org/MCompanyTest/MeasureValue"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://visualdataweb.org/syntheticontology/Salary -->
+
+    <owl:NamedIndividual rdf:about="http://visualdataweb.org/syntheticontology/Salary">
+        <rdf:type rdf:resource="http://visualdataweb.org/syntheticontology/variable"/>
+        <newOntology:hasSize rdf:resource="http://visualdataweb.org/syntheticontology/Large"/>
+        <syntheticontology:hasDependent rdf:resource="http://visualdataweb.org/syntheticontology/Salary"/>
+        <syntheticontology:hasIndependent rdf:resource="http://visualdataweb.org/syntheticontology/Experience"/>
+        <newOntology:hasPublishedDate>01-01-2020</newOntology:hasPublishedDate>
+        <newOntology:hasURI>https://www.payscale.com/research/US/Job=Software_Engineer/Salary</newOntology:hasURI>
+        <syntheticontology:hasValue>[[Experience:&apos;0-2&apos;, Salary:85000],
+[Experience:&apos;10+&apos;,Salary:106000]]</syntheticontology:hasValue>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://visualdataweb.org/syntheticontology/StandardDeviation -->
+
+    <owl:NamedIndividual rdf:about="http://visualdataweb.org/syntheticontology/StandardDeviation">
+        <rdf:type rdf:resource="http://visualdataweb.org/MCompanyTest/MeasureValue"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://visualdataweb.org/syntheticontology/Startup -->
+
+    <owl:NamedIndividual rdf:about="http://visualdataweb.org/syntheticontology/Startup">
+        <rdf:type rdf:resource="http://visualdataweb.org/newOntology/SizeLevel"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://visualdataweb.org/syntheticontology/Team -->
+
+    <owl:NamedIndividual rdf:about="http://visualdataweb.org/syntheticontology/Team">
+        <rdf:type rdf:resource="http://visualdataweb.org/syntheticontology/variable"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://visualdataweb.org/syntheticontology/Variance -->
+
+    <owl:NamedIndividual rdf:about="http://visualdataweb.org/syntheticontology/Variance">
+        <rdf:type rdf:resource="http://visualdataweb.org/MCompanyTest/MeasureValue"/>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+
