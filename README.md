@@ -1,7 +1,6 @@
 # The Synthenetor - Human Resources
 
-Download all 3 files.
-
+Download main.ipynb, CodeOntology.rdf, requirements.txt files.
 
 Run the requirements file to install required python libraries:
 ```$ pip3 install -r requirements.txt```
