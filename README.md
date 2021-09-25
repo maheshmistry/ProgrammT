@@ -1,5 +1,7 @@
 # The Synthenetor - Human Resources
 
+### Assumption - You have the environment to execute python notebooks
+
 Download main.ipynb, CodeOntology.rdf, requirements.txt files.
 
 Run the requirements file to install required python libraries:
