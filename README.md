@@ -1,6 +1,6 @@
 # The Synthenetor - Human Resources
 
-### Assumption - You have the environment to execute python notebooks
+### Assumption - You have a environment to execute python notebooks
 
 Download main.ipynb, CodeOntology.rdf, requirements.txt files.
 
